@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Oswald";
+
+  src: url("./fonts/Oswald-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.header {
+  height: 400px;
+}
+.headerContainer {
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("./images/header-bg-img.jpg");
+  background-position: center 94%;
+  background-size: cover;
+}
+.darkMask {
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000;
+  opacity: 0.55;
+}
+.navButtonContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+.navButtonContainer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-right: 13%;
+
+  list-style: none;
+}
+.navButtonContainer ul > a {
+  font-size: 18pt;
+  font-family: Oswald;
+  color: #ffffff;
+}
+.headerContentContainer {
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.headerCentralElement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerPhoto {
+  width: 200px;
+  height: 200px;
+
+  background-image: url("./images/avatar.jpg");
+  background-position: 48% 33%;
+  border-radius: 100%;
+}
+.headerLegend {
+  justify-content: center;
+  align-items: center;
+
+  font-family: Oswald;
+  text-align: center;
+  color: #ffffff;
+}
+.headerLegend > h1,
+.headerLegend > h2 {
+  margin: 0;
+
+  font-weight: 800;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 4% 0 5%;
+
+  border: 1px solid #d4d4d6;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+  transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+}
+.container:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.greeting,
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2% 5%;
+
+  font-family: Roboto;
+}
+.profile .title + div {
+  display: flex;
+  flex-direction: column;
+}
+.about .title {
+  margin-top: 0;
+  margin-bottom: 28px;
+
+  font-weight: 600;
+  font-size: 16pt;
+  text-align: start;
+  color: #5f6060;
+}
+.profile span {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4%;
+}
+.profile strong {
+  width: 35%;
+}
+.greeting p {
+  margin-top: 0;
+}
+.skills .title {
+  margin: 0;
+  padding: 2% 5%;
+
+  font-weight: 600;
+  font-size: 16pt;
+  font-family: Roboto;
+  text-align: center;
+  color: #5f6060;
+}
+.skills {
+  flex-direction: column;
+
+  font-size: 13pt;
+  font-family: Roboto;
+  text-align: center;
+}
+.skills div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 5%;
+}
+.skills div > img {
+  width: 50%;
+  height: auto;
+}
+.portfolio {
+  flex-direction: column;
+
+  font-size: 13pt;
+  font-family: Roboto;
+  text-align: center;
+}
+.portfolio .title {
+  margin: 0;
+  padding: 2% 5%;
+
+  font-weight: 600;
+  font-size: 16pt;
+  font-family: Roboto;
+  text-align: center;
+  color: #5f6060;
+}
+.imageWrapper > img {
+  z-index: 2;
+
+  width: 100%;
+  height: auto;
+
+  transition: all 0.5s ease-in-out;
+}
+.imageWrapper > img:hover {
+  transform: scale(1.1);
+}
+.portfolio div > a > h3 {
+  color: #000000;
+}
+.imageWrapper {
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 4%;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 30%;
+  margin-bottom: 2%;
+}
+.socials > a {
+  display: contents;
+}
+.socials img {
+  width: 15%;
+  height: auto;
+
+  transition: 0.6s ease-out;
+}
+.socials > a > img:hover {
+  transform: rotateZ(720deg);
+}
