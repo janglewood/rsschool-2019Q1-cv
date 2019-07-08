@@ -248,3 +248,11 @@ a {
 .socials > a > img:hover {
   transform: rotateZ(720deg);
 }
+.menu-toogle {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .navButtonContainer>ul>a {
+    font-size: 1.2rem;
+  }
+}
